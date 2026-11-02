@@ -11,6 +11,11 @@ Projeto desenvolvido como atividade prática do curso Fullstack JavaScript da EB
 - Validação para impedir tarefas vazias.
 - Contagem automática de tarefas com hook personalizado.
 - Interface responsiva utilizando Tailwind CSS.
+- Marcar tarefas como concluídas ou pendentes.
+- Visualizar a quantidade de tarefas concluídas e pendentes.
+- Filtrar tarefas por status: Todas, Pendentes e Concluídas.
+- Identificar visualmente tarefas concluídas.
+
 
 ## Tecnologias utilizadas
 
@@ -77,6 +82,13 @@ npm run build
 - Submissão de novas tarefas.
 - Bloqueio de entradas contendo apenas espaços.
 
+### Componente ListaDeTarefas
+- Verificação dos contadores.
+- Marcação de tarefas como concluídas.
+- Retorno de tarefas ao estado pendente.
+- Filtragem de tarefas pendentes.
+- Filtragem de tarefas concluídas.
+
 ### Hook useContadorDeTarefas
 - Contagem correta de tarefas.
 - Retorno zero para listas vazias.
@@ -88,10 +100,13 @@ npm run build
 
 ## Resultados
 
-- 9 testes aprovados.
-- 3 suítes de testes aprovadas.
-- 96,77% de cobertura de instruções.
-- Build de produção realizado com sucesso.
+- 14 testes aprovados.
+- 4 suítes de testes aprovadas.
+- 97,91% de cobertura de instruções.
+- 95% de cobertura de ramificações.
+- 100% de cobertura de funções.
+- 97,87% de cobertura de linhas.
+- 100% de cobertura no componente ListaDeTarefas.
 
 ## Observações
 
