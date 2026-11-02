@@ -26,7 +26,7 @@ Projeto desenvolvido como atividade prática do curso Fullstack JavaScript da EB
 Clone o repositório:
 
 ```bash
-git clone URL_DO_REPOSITORIO
+git clone https://github.com/AugustoOliveira07/tarefas-testes.git
 ```
 
 Entre na pasta do projeto:
