@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Lista de Tarefas — Next.js 15
 
-First, run the development server:
+Projeto desenvolvido como atividade prática do curso Fullstack JavaScript da EBAC, com foco em testes unitários utilizando Next.js 15, TypeScript, Jest e React Testing Library.
+
+## Funcionalidades
+
+- Listagem de tarefas carregadas por um Server Component.
+- Simulação de busca de dados usando Promise.resolve().
+- Adição de novas tarefas por formulário controlado.
+- Validação para impedir tarefas vazias.
+- Contagem automática de tarefas com hook personalizado.
+- Interface responsiva utilizando Tailwind CSS.
+
+## Tecnologias utilizadas
+
+- Next.js 15 (App Router)
+- React
+- TypeScript
+- Tailwind CSS
+- Jest
+- React Testing Library
+
+## Instalação
+
+Clone o repositório:
+
+```bash
+git clone URL_DO_REPOSITORIO
+```
+
+Entre na pasta do projeto:
+
+```bash
+cd tarefas-testes
+```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+## Executando o projeto
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Acesse http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Executando os testes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Para executar os testes unitários:
 
-## Learn More
+```bash
+npm test
+```
 
-To learn more about Next.js, take a look at the following resources:
+Para verificar a cobertura:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run test:coverage
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Para gerar a versão de produção:
 
-## Deploy on Vercel
+```bash
+npm run build
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Testes implementados
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Componente NovaTarefa
+- Renderização do formulário.
+- Validação do campo vazio.
+- Submissão de novas tarefas.
+- Bloqueio de entradas contendo apenas espaços.
+
+### Hook useContadorDeTarefas
+- Contagem correta de tarefas.
+- Retorno zero para listas vazias.
+- Atualização da contagem após alteração da lista.
+
+### Página principal
+- Renderização das tarefas iniciais.
+- Atualização da lista e do contador após uma adição.
+
+## Resultados
+
+- 9 testes aprovados.
+- 3 suítes de testes aprovadas.
+- 96,77% de cobertura de instruções.
+- Build de produção realizado com sucesso.
+
+## Observações
+
+Os dados são simulados localmente. As novas tarefas são mantidas no estado do React e não persistem após atualizar a página.
